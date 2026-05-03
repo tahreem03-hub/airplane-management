@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Operations Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-plane-departure"></i>
+                <span>Airport Ops</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" data-page="dashboard" class="nav-item active">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" data-page="flights" class="nav-item">
+                    <i class="fas fa-plane"></i>
+                    <span>Flights</span>
+                </a>
+                <a href="#" data-page="passengers" class="nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Passengers</span>
+                </a>
+                <a href="#" data-page="airlines" class="nav-item">
+                    <i class="fas fa-building"></i>
+                    <span>Airlines</span>
+                </a>
+                <a href="#" data-page="aircraft" class="nav-item">
+                    <i class="fas fa-fan"></i>
+                    <span>Aircraft</span>
+                </a>
+                <a href="#" data-page="gates" class="nav-item">
+                    <i class="fas fa-door-open"></i>
+                    <span>Gates</span>
+                </a>
+                <a href="#" data-page="crews" class="nav-item">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Crews</span>
+                </a>
+                <a href="#" data-page="bookings" class="nav-item">
+                    <i class="fas fa-ticket-alt"></i>
+                    <span>Bookings</span>
+                </a>
+                <a href="#" data-page="security" class="nav-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Security</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="page-title">
+                    <h1 id="pageTitle">Dashboard</h1>
+                </div>
+                <div class="user-info">
+                    <i class="fas fa-bell"></i>
+                    <div class="user-avatar">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-area" id="contentArea">
+                <!-- Dynamic content loads here -->
+                <div class="loading">Loading...</div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal for Add/Edit -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Add Record</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic form loads here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
